@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import './App.css';
+import './IconsRegister'
+import './App.scss';
 import Header from './components/header/Header'
 import SomeFacilitiesBox from "./components/some-facilities/SomeFacilitiesBox";
 import NearbyProductsBox from "./components/nearby-products/NearbyProductsBox";
