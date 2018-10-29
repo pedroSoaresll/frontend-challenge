@@ -4,4 +4,24 @@
   border-radius: 5px;
   width: 90%;
   background-color: #FFF;
+
+  .area-icon {
+
+    font-size: 20pt;
+  }
+
+  input {
+
+    width: 100%;
+    font-size: 16pt;
+    color: grey;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+
+    &::placeholder {
+
+      color: #b2bec3;
+    }
+  }
 }

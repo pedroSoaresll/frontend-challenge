@@ -11,7 +11,8 @@ export default class SearchTop extends React.Component {
         <div className="area-icon mr-4">
           <FontAwesomeIcon icon="search" color="#FAA71B"/>
         </div>
-        <input type="text" name="search" />
+
+        <input type="text" name="search" placeholder="Digite o sabor da melhor pizza..."/>
       </div>
     )
   }
