@@ -1,18 +1,41 @@
 import React from 'react'
-import {Button} from '@material-ui/core'
+import {Grid, Paper} from '@material-ui/core'
+import SectionTitle from "../shared/section-title/SectionTitle";
+import PaperContentSomeFacilities from "../shared/paper-content-some-facilities/PaperContentSomeFacilities";
 
 export default class SomeFacilitiesBox extends React.Component {
 
   render() {
 
     return (
-      <section className="some-facilities-box">
-        <h3 className="title-some-facilities">Some Facilities!</h3>
+      <Grid className="some-facilities-box" container spacing={24} xs={12}>
 
-        <div className="some-facilities-content">
-          <Button>Ola mundo</Button>
-        </div>
-      </section>
+        <Grid item xs={12}>
+
+          <SectionTitle text="Algumas Facilidades"/>
+        </Grid>
+
+        <Grid container spacing={40} className="some-facilities-content">
+
+          <Grid item xs={4}>
+            <Paper>
+              <PaperContentSomeFacilities icon="history" text="Histórico das pizzas que você viu"/>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Paper>
+              <PaperContentSomeFacilities icon="shopping-cart" text="Pedidos aguardando fechar a compra"/>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Paper>
+              <PaperContentSomeFacilities icon="star" text="Só as favoritas"/>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Grid>
     )
   }
 }

@@ -10,14 +10,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="header-box">
+        <section className="header-box">
           <Header/>
-        </div>
+        </section>
 
-        <div className="content-box">
-          <SomeFacilitiesBox/>
-          <NearbyProductsBox/>
-        </div>
+        <section className="content-box">
+          <div className="section-some-facilities mt-4">
+            <SomeFacilitiesBox/>
+          </div>
+
+          <div className="section-nearby-product d-block mt-5 w-100">
+            <NearbyProductsBox/>
+          </div>
+        </section>
       </div>
     );
   }
